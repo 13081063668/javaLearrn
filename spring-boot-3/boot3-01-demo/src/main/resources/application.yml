@@ -1,0 +1,40 @@
+spring:
+  data:
+    redis:
+      host: localhost
+      port: 6379
+server:
+  port: 8888
+  # String name;
+---
+person:
+  name: zifei
+  # Integer age;
+  age: 18
+  # Data birthDay;
+  birthDay: 2010/10/10 12:12:12
+  # Boolean like;
+  like: true
+  # Child child;
+  child:
+    name: lisi
+    age: 12
+    birthDay: 2010/10/10
+    # List<String> text;
+    # text:["abc", "def"]
+    text:
+      - abc
+      - def
+  # List<Dogs> dogs;
+  dogs:
+    - name: 小黑
+      age: 3
+    - name: 小白
+      age: 4
+  # Map<String, Cat> cats;
+  cats:
+    c1:
+      name: 小兰
+    c2:
+      name: 小灰
+    c3: {name: 小绿, age: 2}
